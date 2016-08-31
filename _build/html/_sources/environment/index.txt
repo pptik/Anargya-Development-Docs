@@ -16,10 +16,12 @@ Arsitektur
 ********************
 Lingkungan Anargya terdiri dari beberapa node, seperti yang dijelaskan pada gambar berikut :
 
-.. image:: arsitektur.png
+.. figure:: arsitektur.png
     :width: 100%
     :align: center
     :alt: alternate text
+
+    Arsitektur Lingkungan Anargya
 
 Secara garis besar lingkungan Anargya terdiri dari empat node utama :
 
@@ -29,7 +31,7 @@ Secara garis besar lingkungan Anargya terdiri dari empat node utama :
 
 * Server yang melayani aktifitas transaksi, **Trx Server**
 
-* Databse
+* Database
 
 Partner Server
 ###############

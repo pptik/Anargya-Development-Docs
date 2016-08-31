@@ -57,7 +57,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Anargya Development Docs'
-copyright = u'2016, @hynra'
+copyright = u'2016, PPTIK-ITB'
 author = u'@hynra'
 
 # The version info for the project you're documenting, acts as replacement for
