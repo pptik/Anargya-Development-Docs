@@ -43,15 +43,24 @@
             
   <div class="section" id="environment">
 <h1>Environment<a class="headerlink" href="#environment" title="Permalink to this headline">¶</a></h1>
-<p>Skema Umum Anargya Environment</p>
+<div class="toctree-wrapper compound">
 </div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="arsitektur">
+<h2>Arsitektur<a class="headerlink" href="#arsitektur" title="Permalink to this headline">¶</a></h2>
+<p>Lingkungan Anargya terdiri dari beberapa node, seperti yang dijelaskan pada gambar berikut :</p>
+<a class="reference internal image-reference" href="../_images/arsitektur.png"><img alt="alternate text" class="align-center" src="../_images/arsitektur.png" style="width: 100%;" /></a>
+<p>Secara garis besar lingkungan Anargya terdiri dari empat node utama :</p>
 <ul class="simple">
-<li><a class="reference internal" href="../genindex.html"><span class="std std-ref">Index</span></a></li>
-<li><a class="reference internal" href="../py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
-<li><a class="reference internal" href="../search.html"><span class="std std-ref">Search Page</span></a></li>
+<li>Server yang menangani urusan Partner, <strong>Partner Server</strong></li>
+<li>Server yang menagani Operasional (Log, Report, traffic, dll), <strong>Ops Server</strong></li>
+<li>Server yang melayani aktifitas transaksi, <strong>Trx Server</strong></li>
+<li>Databse</li>
 </ul>
+<div class="section" id="partner-server">
+<h3>Partner Server<a class="headerlink" href="#partner-server" title="Permalink to this headline">¶</a></h3>
+<p>Partner Server berisi sumber kode yang menangani management partner, ditampilkan dalam antarmuka website. Secara garis besar, partner dibagi menjadi dua role : loket dan agen. Agen adalah end user dari lingkungan Anargya, sedangkan diatasnya terdapat loket. Masing-masing bentuk partnership bisa menggunakan layanan antar muka website untuk mengelola akun dan transaksi dengan melakukan login menggunakan role yang telah ditentukan. Data yang dikelola diambil dan disimpan di database, direct dan menggunakan web service tergantung fitur yang digunakan.</p>
+</div>
+</div>
 </div>
 
 
@@ -62,8 +71,13 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Environment</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+<li><a class="reference internal" href="#">Environment</a><ul>
+<li><a class="reference internal" href="#arsitektur">Arsitektur</a><ul>
+<li><a class="reference internal" href="#partner-server">Partner Server</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <div class="relations">
 <h3>Related Topics</h3>
