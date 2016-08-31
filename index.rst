@@ -9,8 +9,9 @@ Anargya Dev-Docs
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
+   environment/index
 
 
 Indices and tables
